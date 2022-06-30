@@ -24,16 +24,16 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure and save the princess.") 
 
 #Write your code below this line 👇
-first_turn = input("Which way do you want to go? Type L for Left or R for Right ")
-if first_turn == "L":
+first_turn = input("Which way do you want to go? Type 'Left' or 'Right' "). upper()
+if first_turn == "LEFT":
     print("Good Choice. Keep going strong")
 
-    second_turn = input("You have reached the River of Life/Death. Do you want to swim or wait? ")
-    if second_turn == "wait":
+    second_turn = input("You have reached the River of Life/Death. Do you want to 'swim' or 'wait'? "). upper()
+    if second_turn == "WAIT":
         print("I knew I could bet on you to save the princess. Keep going")
 
-        third_turn = input("Now you have to choose 1 door. Blue, Green or Red? ")
-        if third_turn == "Blue":
+        third_turn = input("Now you have to choose 1 door. 'Blue', 'Green' or 'Red'? "). upper()
+        if third_turn == "BLUE":
             print("You found the Treasure. You win!")
         else:
             print("You've been held captive. Game over!")
